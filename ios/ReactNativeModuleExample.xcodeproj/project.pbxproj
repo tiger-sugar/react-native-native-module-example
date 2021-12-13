@@ -13,6 +13,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2A84639A2D4704AE605EAC18 /* libPods-ReactNativeModuleExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7619CE54FDA8561D802F6217 /* libPods-ReactNativeModuleExample.a */; };
+		54E74A4227671BA2000E8AC5 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E74A4127671BA2000E8AC5 /* RCTCalendarModule.m */; };
+		54E74A4327671BA2000E8AC5 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E74A4127671BA2000E8AC5 /* RCTCalendarModule.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeModuleExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeModuleExample/main.m; sourceTree = "<group>"; };
 		3A7A5E598B0C09C2ECF05C64 /* libPods-ReactNativeModuleExample-ReactNativeModuleExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeModuleExample-ReactNativeModuleExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E74A4027671B3E000E8AC5 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
+		54E74A4127671BA2000E8AC5 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 		7619CE54FDA8561D802F6217 /* libPods-ReactNativeModuleExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeModuleExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8A3A68E9E9FF11E57482C4 /* Pods-ReactNativeModuleExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeModuleExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeModuleExample/Pods-ReactNativeModuleExample.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeModuleExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				54E74A4027671B3E000E8AC5 /* RCTCalendarModule.h */,
+				54E74A4127671BA2000E8AC5 /* RCTCalendarModule.m */,
 			);
 			name = ReactNativeModuleExample;
 			sourceTree = "<group>";
@@ -145,7 +151,6 @@
 				0CDB29FEF5A9CE48863DCA36 /* Pods-ReactNativeModuleExample-ReactNativeModuleExampleTests.debug.xcconfig */,
 				FB5DA19EA2D11CA347E89E4A /* Pods-ReactNativeModuleExample-ReactNativeModuleExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,10 +210,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1310;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -404,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ReactNativeModuleExampleTests.m in Sources */,
+				54E74A4327671BA2000E8AC5 /* RCTCalendarModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E74A4227671BA2000E8AC5 /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -432,6 +440,7 @@
 			baseConfigurationReference = 0CDB29FEF5A9CE48863DCA36 /* Pods-ReactNativeModuleExample-ReactNativeModuleExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -450,6 +459,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeModuleExampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeModuleExample.app/ReactNativeModuleExample";
 			};
 			name = Debug;
@@ -459,6 +471,7 @@
 			baseConfigurationReference = FB5DA19EA2D11CA347E89E4A /* Pods-ReactNativeModuleExample-ReactNativeModuleExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeModuleExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -474,6 +487,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeModuleExampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeModuleExample.app/ReactNativeModuleExample";
 			};
 			name = Release;
@@ -498,6 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeModuleExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeModuleExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNativeModuleExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeModuleExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
